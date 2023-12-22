@@ -11,6 +11,7 @@ public class SearchOrderbook {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int Id;
 	private String PO;
 	private String Opportunity_Description;
 	private String Project_Name;
@@ -21,6 +22,13 @@ public class SearchOrderbook {
 	private String Account_Name;
 	private String po_availability;
 	private String PID;
+	
+	public int getId() {
+		return Id;
+	}
+	public void setId(int id) {
+		Id = id;
+	}
 	public String getPO() {
 		return PO;
 	}
